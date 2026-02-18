@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>10,000+ Backlink Sites – Premium SEO List</title>
+    <title>10,000+ Basic Backlink Toolkit – Professional SEO Database</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
 
@@ -18,7 +18,7 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* Smooth Reset */
+        /* --- Global Reset --- */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
 
@@ -31,78 +31,78 @@
         }
 
         .container { 
-            width: 90%; 
-            max-width: 1100px; 
+            width: 92%; 
+            max-width: 1200px; 
             margin: auto; 
         }
 
-        /* --- HERO SECTION --- */
+        /* --- Hero Section --- */
         .hero {
             background: radial-gradient(circle at top right, #102A43, var(--bg-dark));
-            padding: clamp(60px, 10vh, 120px) 0;
+            padding: clamp(80px, 12vh, 140px) 0;
             text-align: center;
         }
 
         .hero h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: clamp(2.2rem, 6vw, 3.8rem);
+            font-size: clamp(2.4rem, 7vw, 4rem);
             font-weight: 800;
             line-height: 1.1;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             background: linear-gradient(to right, #FFFFFF, var(--accent-cyan));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero p {
-            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-size: clamp(1.1rem, 2.8vw, 1.4rem);
             color: var(--text-dim);
-            max-width: 750px;
-            margin: 0 auto 35px;
+            max-width: 800px;
+            margin: 0 auto 40px;
         }
 
-        .highlight-text { color: var(--accent-gold); font-weight: 700; }
+        .highlight { color: var(--accent-gold); font-weight: 700; }
 
-        /* --- BUTTONS --- */
+        /* --- Buttons --- */
         .btn {
             background: var(--accent-gold);
             color: #000;
-            padding: clamp(14px, 2vw, 18px) clamp(25px, 4vw, 45px);
+            padding: 18px 45px;
             text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
             border-radius: 50px;
             display: inline-block;
             transition: var(--transition);
-            box-shadow: 0 10px 20px rgba(245, 197, 24, 0.2);
+            box-shadow: 0 10px 25px rgba(245, 197, 24, 0.3);
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(245, 197, 24, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(245, 197, 24, 0.5);
             filter: brightness(1.1);
         }
 
-        /* --- SECTION STYLING --- */
-        .section { padding: clamp(50px, 8vw, 100px) 0; }
+        /* --- Sections --- */
+        .section { padding: clamp(60px, 10vw, 120px) 0; }
         .section-title {
             text-align: center;
             font-family: 'Outfit', sans-serif;
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-size: clamp(2rem, 5vw, 2.8rem);
             margin-bottom: 50px;
             color: white;
         }
 
-        /* --- GRID SYSTEM (Responsive) --- */
+        /* --- Feature Grid --- */
         .grid-auto {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
 
         .card {
             background: var(--card-bg);
-            padding: 35px 25px;
+            padding: 40px 30px;
             border-radius: 24px;
             border: 1px solid rgba(255,255,255,0.05);
             text-align: center;
@@ -110,109 +110,93 @@
         }
 
         .card:hover {
-            background: #162942;
             border-color: var(--accent-cyan);
-            transform: translateY(-8px);
+            transform: translateY(-10px);
+            background: #162942;
         }
 
-        .card h3 {
-            color: var(--accent-cyan);
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-        }
+        .card h3 { color: var(--accent-cyan); font-family: 'Outfit'; font-size: 1.5rem; margin-bottom: 15px; }
 
-        /* --- DATABASE PREVIEW (Aspect Ratio Fixed) --- */
+        /* --- Database Preview & Categorized List --- */
         .preview-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
         }
 
         .preview-grid img {
             width: 100%;
-            aspect-ratio: 16 / 10; /* Forces images to be the same height */
-            object-fit: cover;     /* Prevents stretching */
-            object-position: top;  /* Shows the top of the spreadsheet */
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            object-position: top;
             border-radius: 20px;
             border: 2px solid rgba(255,255,255,0.1);
             transition: var(--transition);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
         }
 
-        .preview-grid img:hover {
-            transform: scale(1.02);
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .category-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 18px 25px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .category-item:hover {
+            background: rgba(0, 210, 255, 0.1);
             border-color: var(--accent-cyan);
+            padding-left: 35px;
         }
 
-        /* --- PAYMENT STEPS --- */
+        .category-item::before { content: "📁"; margin-right: 15px; filter: grayscale(1); }
+
+        /* --- Payment & Pricing --- */
+        .price-card {
+            background: linear-gradient(145deg, #112236, #081424);
+            padding: clamp(40px, 8vw, 80px);
+            border-radius: 40px;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid var(--accent-cyan);
+            box-shadow: 0 0 40px rgba(0, 210, 255, 0.15);
+        }
+
         .step-box {
             background: rgba(255, 255, 255, 0.02);
             padding: 35px;
             border-radius: 24px;
-            border-left: 5px solid var(--accent-gold);
-            height: 100%;
-        }
-
-        .step-box h3 { 
-            color: var(--accent-gold); 
-            margin-bottom: 15px;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        /* --- PRICING BOX --- */
-        .price-card {
-            background: linear-gradient(145deg, #112236, #081424);
-            padding: clamp(30px, 5vw, 60px);
-            border-radius: 40px;
-            max-width: 650px;
-            margin: auto;
-            text-align: center;
-            border: 1px solid rgba(0, 210, 255, 0.3);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-        }
-
-        .price-card h2 { 
-            font-size: clamp(2.5rem, 6vw, 3.5rem); 
-            font-family: 'Outfit', sans-serif;
-            color: white;
-            margin-bottom: 10px;
+            border-top: 4px solid var(--accent-gold);
+            text-align: left;
         }
 
         /* --- FAQ --- */
-        .faq-container { max-width: 800px; margin: auto; }
+        .faq-container { max-width: 850px; margin: auto; }
         details {
             background: var(--card-bg);
             margin-bottom: 15px;
             border-radius: 16px;
             overflow: hidden;
-            transition: var(--transition);
         }
         summary {
-            padding: 22px;
+            padding: 24px;
             cursor: pointer;
             font-weight: 600;
             color: var(--accent-cyan);
             list-style: none;
             display: flex;
             justify-content: space-between;
-            align-items: center;
         }
-        summary::after { 
-            content: '→'; 
-            transition: transform 0.3s;
-        }
-        details[open] summary::after { transform: rotate(90deg); }
-        details p { padding: 0 22px 22px; color: var(--text-dim); }
-
-        /* --- FOOTER --- */
-        .footer-cta {
-            background: #000;
-            padding: 80px 0;
-            text-align: center;
-            border-top: 1px solid #1B2C50;
-        }
+        details p { padding: 0 24px 24px; color: var(--text-dim); }
 
     </style>
 </head>
@@ -221,9 +205,9 @@
 
     <header class="hero">
         <div class="container">
-            <h1>10,000+ Manually Tested <br>Backlink Sites</h1>
-            <p>মাত্র <span class="highlight-text">500 BDT</span> এ পান হাই-কোয়ালিটি ব্যাকলিঙ্ক লিস্ট এবং আপনার এসইও জার্নি শুরু করুন প্রফেশনালদের মতো।</p>
-            <a href="#buy" class="btn">Buy Full Access – 500 BDT</a>
+            <h1>10,000+ Premium <br>Backlink Toolkit</h1>
+            <p>একটি মাত্র প্যাকেজে পাচ্ছেন <span class="highlight">২৩টি আলাদা ক্যাটাগরির</span> হাই-অথোরিটি ব্যাকলিঙ্ক ডেটাবেস। মাত্র <span class="highlight">500 BDT</span> এ আজই শুরু করুন।</p>
+            <a href="#buy" class="btn">Get Instant Access Now</a>
         </div>
     </header>
 
@@ -231,20 +215,16 @@
         <div class="container">
             <div class="grid-auto">
                 <div class="card">
-                    <h3>60% Workable</h3>
-                    <p>Personally tested and manually verified links.</p>
+                    <h3>Tested Quality</h3>
+                    <p>60% Workable verified links manually checked for success.</p>
                 </div>
                 <div class="card">
-                    <h3>Fast Indexing</h3>
-                    <p>Specially curated list for 20% faster indexing.</p>
+                    <h3>Search Dominance</h3>
+                    <p>High Authority (DA/PA) sites to boost your ranking fast.</p>
                 </div>
                 <div class="card">
-                    <h3>10,000+ Sites</h3>
-                    <p>Massive database of high authority domains.</p>
-                </div>
-                <div class="card">
-                    <h3>Instant Access</h3>
-                    <p>Get the Google Sheet link immediately after payment.</p>
+                    <h3>Instant Delivery</h3>
+                    <p>Get the full database link within 10 minutes of payment.</p>
                 </div>
             </div>
         </div>
@@ -252,42 +232,57 @@
 
     <section class="section" style="background: rgba(255,255,255,0.02);">
         <div class="container">
-            <h2 class="section-title">Database Preview</h2>
-            <p style="text-align:center; margin-top:-30px; margin-bottom:40px; color: var(--text-dim);">আমাদের ডেটাবেসের একটি ছোট ঝলক নিচে দেওয়া হলো</p>
+            <h2 class="section-title">Database Preview & Categories</h2>
+            
             <div class="preview-grid">
-                <img src="https://raw.githubusercontent.com/Nasir783174/backlinksell/main/image-1.JPG" alt="Backlink Sheet Part 1">
-                <img src="https://raw.githubusercontent.com/Nasir783174/backlinksell/main/image-2.JPG" alt="Backlink Sheet Part 2">
+                <img src="https://raw.githubusercontent.com/Nasir783174/backlinksell/main/image-1.JPG" alt="Backlink Data 1">
+                <img src="https://raw.githubusercontent.com/Nasir783174/backlinksell/main/image-2.JPG" alt="Backlink Data 2">
             </div>
-        </div>
-    </section>
 
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Why Choose This List?</h2>
-            <div class="grid-auto">
-                <div class="card"><h3>No Spam Sites</h3></div>
-                <div class="card"><h3>High Authority</h3></div>
-                <div class="card"><h3>Lifetime Update</h3></div>
-                <div class="card"><h3>One-Time Cost</h3></div>
+            <h3 style="text-align: center; margin-bottom: 30px; font-family: 'Outfit'; color: var(--accent-gold);">Inside This Bundle:</h3>
+            <div class="category-grid">
+                <div class="category-item"><span>Article Submission</span></div>
+                <div class="category-item"><span>Basic Backlink Sheet</span></div>
+                <div class="category-item"><span>Business Listing / Local Citations</span></div>
+                <div class="category-item"><span>Classified Listings</span></div>
+                <div class="category-item"><span>Directory Link Submission</span></div>
+                <div class="category-item"><span>Guest Blogging</span></div>
+                <div class="category-item"><span>High Authority Backlink</span></div>
+                <div class="category-item"><span>Image Submission</span></div>
+                <div class="category-item"><span>Infographic Submission</span></div>
+                <div class="category-item"><span>Job Posting</span></div>
+                <div class="category-item"><span>100 USA Local Citations</span></div>
+                <div class="category-item"><span>Micro Blogging</span></div>
+                <div class="category-item"><span>Podcast Submission</span></div>
+                <div class="category-item"><span>PPT & PDF Submission</span></div>
+                <div class="category-item"><span>Press Release Websites</span></div>
+                <div class="category-item"><span>Profile Backlink</span></div>
+                <div class="category-item"><span>Q&A Websites</span></div>
+                <div class="category-item"><span>RSS Feed Submission</span></div>
+                <div class="category-item"><span>SEO Audit Sites</span></div>
+                <div class="category-item"><span>Social Bookmarking</span></div>
+                <div class="category-item"><span>Top Citations (10 Countries)</span></div>
+                <div class="category-item"><span>Video Submission</span></div>
+                <div class="category-item"><span>Web 2.0</span></div>
             </div>
         </div>
     </section>
 
     <section class="section" id="buy">
         <div class="container">
-            <h2 class="section-title">How to Buy — 3 Simple Steps</h2>
-            <div class="grid-auto" style="gap: 30px;">
+            <h2 class="section-title">How to Get Started</h2>
+            <div class="grid-auto">
                 <div class="step-box">
-                    <h3>01. Pay 500 BDT</h3>
-                    <p>bKash (Personal): 01XXXXXXXXX<br>Nagad (Personal): 01XXXXXXXXX<br>রেফারেন্সে "Backlink" লিখুন।</p>
+                    <h3 style="color: var(--accent-gold);">1. Make Payment</h3>
+                    <p>Pay 500 BDT via bKash/Nagad<br><strong>01XXXXXXXXX</strong> (Personal)</p>
                 </div>
                 <div class="step-box">
-                    <h3>02. Send Screenshot</h3>
-                    <p>পেমেন্ট করার পর ট্রানজিশন আইডি বা স্ক্রিনশট আমাদের WhatsApp-এ পাঠান।</p>
+                    <h3 style="color: var(--accent-gold);">2. Share Proof</h3>
+                    <p>WhatsApp-এ পেমেন্ট স্ক্রিনশট বা ট্রানজিশন আইডি পাঠান।</p>
                 </div>
                 <div class="step-box">
-                    <h3>03. Get Access</h3>
-                    <p>ভেরিফিকেশন শেষ হলে আপনি সাথে সাথেই ফুল শিট এক্সেস লিঙ্ক পেয়ে যাবেন।</p>
+                    <h3 style="color: var(--accent-gold);">3. Unlock Access</h3>
+                    <p>১০ মিনিটের মধ্যে সবগুলোর শিট এক্সেস লিঙ্ক বুঝে নিন।</p>
                 </div>
             </div>
         </div>
@@ -296,39 +291,35 @@
     <section class="section">
         <div class="container">
             <div class="price-card">
-                <h2>500 BDT</h2>
-                <p>✔ 10,000+ Verified Sites<br>✔ Life Time Access<br>✔ Fast Indexing List Included</p>
-                <br>
-                <a href="https://wa.me/YOURNUMBER" class="btn">Buy Now – Get Access</a>
+                <h2 style="font-size: 3.5rem; color: white;">500 BDT</h2>
+                <p style="margin-bottom: 30px; color: var(--text-dim);">একবার পেমেন্ট করুন, আজীবনের জন্য এক্সেস নিন। সব আপডেট ফ্রি!</p>
+                <a href="https://wa.me/YOUR_NUMBER" class="btn">Order via WhatsApp</a>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title">সচরাচর জিজ্ঞাসিত প্রশ্নাবলী</h2>
             <div class="faq-container">
                 <details>
-                    <summary>এই লিস্টের সব লিঙ্ক কি কাজ করবে?</summary>
-                    <p>ইন্টারনেটের লিঙ্ক প্রতিনিয়ত পরিবর্তন হয়। তবে আমরা গ্যারান্টি দিচ্ছি যে ৬০% এর বেশি লিঙ্ক সরাসরি কার্যকর পাবেন।</p>
+                    <summary>আমি কি সবগুলো ফাইল আলাদা পাবো?</summary>
+                    <p>হ্যাঁ, প্রতিটি ক্যাটাগরির জন্য আলাদা শিট তৈরি করা আছে যাতে আপনি সহজেই কাজ করতে পারেন।</p>
                 </details>
                 <details>
-                    <summary>ইন্ডেক্স হতে কত সময় লাগে?</summary>
-                    <p>সাধারণত ২০% লিঙ্ক ৩০ দিনের মধ্যে ইন্ডেক্স হয়ে যায়, যা একটি ইন্ডাস্ট্রি স্ট্যান্ডার্ড রেট।</p>
+                    <summary>লিঙ্কগুলো কি সবসময় আপডেট করা হয়?</summary>
+                    <p>আমরা নিয়মিত নতুন লিঙ্ক যোগ করি এবং ডেড লিঙ্কগুলো সরিয়ে ফেলার চেষ্টা করি।</p>
                 </details>
                 <details>
-                    <summary>ডেলিভারি পেতে দেরি হয় কি?</summary>
-                    <p>না! আমাদের সাপোর্ট টিম পেমেন্ট স্ক্রিনশট দেখার ৫-১০ মিনিটের মধ্যেই লিঙ্ক দিয়ে দেয়।</p>
+                    <summary>ডেলিভারি মাধ্যম কি?</summary>
+                    <p>পেমেন্ট কনফার্ম হওয়ার পর আপনাকে একটি গুগল ড্রাইভ ফোল্ডার লিঙ্ক দেওয়া হবে যেখানে সব ফাইল থাকবে।</p>
                 </details>
             </div>
         </div>
     </section>
 
-    <footer class="footer-cta">
-        <div class="container">
-            <h2 style="font-family:'Outfit'; font-size: 2rem; margin-bottom: 25px;">Ready to Boost Your SEO?</h2>
-            <a href="#buy" class="btn">Order Your List Today</a>
-        </div>
+    <footer style="padding: 60px 0; text-align: center; border-top: 1px solid #1B2C50;">
+        <p style="color: var(--text-dim);">&copy; 2026 Backlink Master. All Rights Reserved.</p>
     </footer>
 
 </body>
